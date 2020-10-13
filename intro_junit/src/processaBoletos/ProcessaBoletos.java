@@ -8,7 +8,7 @@ import boleto.Boleto;
 public class ProcessaBoletos {
 	
 	
-private ArrayList items;
+private static ArrayList items;
 	
 	public ProcessaBoletos(ArrayList Boleto) {
 		items = Boleto;

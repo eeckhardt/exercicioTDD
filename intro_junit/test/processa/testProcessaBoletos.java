@@ -31,6 +31,18 @@ public class testProcessaBoletos {
 		
 	}
 	
+	
+	@DisplayName("Testa 2 boletos de 400 e 500")
+	@Test
+	public void testSomaDoisBoletos() {
+		double soma = 900;
+		String status = ProcessaBoletos.Verfica(soma,2000);
+		
+		Assertions.assertEquals("Fatura em Aberto", status);
+		
+		}
+	
+	
 	}
 
 
