@@ -32,13 +32,22 @@ public class testProcessaBoletos {
 	}
 	
 	
-	@DisplayName("Testa 2 boletos de 400 e 500")
+	@DisplayName("Testa fatura em Aberto")
 	@Test
 	public void testSomaDoisBoletos() {
 		double soma = 900;
 		String status = ProcessaBoletos.Verfica(soma,2000);
 		
 		Assertions.assertEquals("Fatura em Aberto", status);
+		
+		}
+	@DisplayName("Fatura Paga")
+	@Test
+	public void testSoma3() {
+		
+		String status = ProcessaBoletos.Verfica(1500,1500);
+		
+		Assertions.assertEquals("Fatura Paga", status);
 		
 		}
 	

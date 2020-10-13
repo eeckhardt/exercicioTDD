@@ -28,7 +28,7 @@ private static ArrayList items;
 	public static String Verfica(double valorTotal, double valorFatura) {
 		
 		if (valorTotal == valorFatura) {
-			return "Fatuta Paga";			
+			return "Fatura Paga";			
 		}
 		return "Fatura em Aberto";
 			
