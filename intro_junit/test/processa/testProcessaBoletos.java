@@ -2,6 +2,8 @@ package processa;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -43,7 +45,7 @@ public class testProcessaBoletos {
 		}
 	@DisplayName("Fatura Paga")
 	@Test
-	public void testSoma3() {
+	public void testFaturapaga() {
 		
 		String status = ProcessaBoletos.Verfica(1500,1500);
 		
@@ -51,6 +53,26 @@ public class testProcessaBoletos {
 		
 		}
 	
+	
+	@DisplayName("Testa 3 valores")
+	@Test
+	public void testSoma3() {
+		
+		Boleto[] pg;
+		pg = new Boleto[3];
+		
+		pg[1] = ("1",400," ");
+		pg[2]=("2",600," ");
+		pg[3]=('3',500,' ');
+		
+				
+				
+		double soma = ProcessaBoletos.getValorTotal();
+		String status = ProcessaBoletos.Verfica(1500,1500);
+		
+		Assertions.assertEquals("Fatura Paga", status);
+		
+		}
 	
 	}
 

@@ -7,11 +7,11 @@ public class Boleto {
 
 	private String codigo;
 	private double valorPago;
-	private Date data;
+	private String data;
 	
 
 	
-	public Boleto(String codigo, double valorPago, Date data) {
+	public Boleto(String codigo, double valorPago, String data) {
 		super();
 		this.codigo = codigo;
 		this.valorPago = valorPago;
@@ -31,10 +31,10 @@ public class Boleto {
 	public void setvalorPago(double valorPago) {
 		this.valorPago = valorPago;
 	}
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 	

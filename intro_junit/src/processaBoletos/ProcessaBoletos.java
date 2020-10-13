@@ -14,6 +14,7 @@ private static ArrayList items;
 		items = Boleto;
 	}
 	
+
 	public static double getValorTotal() {
 		double valorTotal = 0.0;
 		

@@ -8,11 +8,11 @@ public class Fatura {
 	
 	private String nome;
 	private double valorTotal;
-	private Date data;
+	private String data;
 		
 
 	
-	public Fatura(String nome, double valorTotal, Date data) {
+	public Fatura(String nome, double valorTotal, String data) {
 		super();
 		this.nome = nome;
 		this.valorTotal = valorTotal;
@@ -32,10 +32,10 @@ public class Fatura {
 	public void setvalorTotal(double valorTotal) {
 		this.valorTotal = valorTotal;
 	}
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 	
